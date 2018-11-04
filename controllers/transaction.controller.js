@@ -212,5 +212,5 @@ exports.upsertTransactions = async (req, resp) => {
             // console.log('res', res);
         }
     console.log('all done');
-    resp.status(200).send(res);
+    resp.status(200).send(values);
 }
