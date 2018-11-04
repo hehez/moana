@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+    <body>
+        <table>
+          <tr>
+            <th>id</th>
+            <th>Name</th>
+            <th>date</th>
+            <th>amount</th>
+            <th>trans_id</th>
+          </tr>
+
+          <% for (var i = 0; i < records.length; i++) { %>
+            <tr>
+              <td><%= records[i].id %></td>
+              <td><%= records[i].name %></td>
+              <td><%= records[i].date %></td>
+              <td><%= records[i].amount %></td>
+              <td><%= records[i].trans_id %></td>
+            </tr>
+          <% } %>
+        </table>
+    </body>
+</html>
